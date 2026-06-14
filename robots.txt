@@ -1,4 +1,3 @@
 User-agent: *
 Allow: /
-
 Sitemap: https://englishstudy.club/sitemap.xml
