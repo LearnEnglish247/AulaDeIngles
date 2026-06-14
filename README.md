@@ -1,27 +1,21 @@
-# Aula de Inglés Nava – site package
+# Aula de Inglés Nava – clean new site package
 
-Main navigation now simplified to:
-- Inicio
-- La academia
-- Clases
-- Método
-- Precios
-- Exámenes
-- Dónde estamos
-- Contacto
+This version removes the old demographic/legacy redirect folders entirely.
+
+Main pages:
+- /
+- /la-academia/
+- /clases/
+- /metodo/
+- /precios/
+- /examenes/
+- /donde-estamos/
+- /contacto/
 
 Secondary/footer pages:
-- Prueba de nivel
-- Tienda
-- Collaborate with us
-- Política de privacidad y cookies
+- /prueba-de-nivel/
+- /tienda/
+- /colabora/
+- /privacy.html
 
-Current embedded forms:
-- Main enquiry form: https://docs.google.com/forms/d/e/1FAIpQLSf5m36IGmf_M_8YncsYXabPugKdYZBxui1MRvsKVuxpWvXshQ/viewform
-- Level test form: https://docs.google.com/forms/d/e/1FAIpQLSczrpYccZqxaVvGwDgjVQIcDgaU0Y9QI8OE8MvS9HBi64tyNQ/viewform
-
-Quick contact:
-- Email: asturingles.nava@gmail.com
-- WhatsApp: +34 644 852 762
-- Instagram: https://www.instagram.com/aula.de.ingles.nava/
-- LinkedIn: https://www.linkedin.com/in/aula-de-ingles-nava/
+Upload the contents of this folder to the root of the GitHub Pages repository.
