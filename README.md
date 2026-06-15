@@ -1,21 +1,12 @@
-# Aula de Inglés Nava – clean new site package
+# Aula de Inglés Nava – editorial pass site package
 
-This version removes the old demographic/legacy redirect folders entirely.
-
-Main pages:
-- /
-- /la-academia/
-- /clases/
-- /metodo/
-- /precios/
-- /examenes/
-- /donde-estamos/
-- /contacto/
-
-Secondary/footer pages:
-- /prueba-de-nivel/
-- /tienda/
-- /colabora/
-- /privacy.html
+Updated copy and layout fixes:
+- Full public-facing copy pass in Spanish.
+- Gender-neutral/supervisión docente wording.
+- Contact page simplified to the form only.
+- Dónde estamos updated with Calle Colegiata, 3, Nava and larger desktop map.
+- Footer alignment corrected for desktop/sidebar layout.
+- Social buttons visible in footer.
+- Robust favicon v3 set with white/cream backing for Chrome and other browsers.
 
 Upload the contents of this folder to the root of the GitHub Pages repository.
