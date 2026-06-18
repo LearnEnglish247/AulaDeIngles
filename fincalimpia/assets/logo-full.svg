@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 260" role="img" aria-labelledby="title desc">
+  <title id="title">Finca Limpia</title>
+  <desc id="desc">Logo de Finca Limpia, servicios de corte, desbroce y limpieza de fincas.</desc>
+  <defs>
+    <style>
+      .cream{fill:#f7efdf}.gold{fill:#d9a83b}.none{fill:none;stroke:#f7efdf;stroke-width:12;stroke-linecap:round;stroke-linejoin:round}.text{font-family:Georgia,'Times New Roman',serif;font-weight:700;fill:#f7efdf}.line{fill:none;stroke:#d9a83b;stroke-width:3;stroke-linecap:round}
+    </style>
+  </defs>
+  <g transform="translate(0 0) scale(1)">
+    <path class="none" d="M128 20c58 0 105 47 105 105 0 20-6 39-16 55-19 29-52 49-89 49-11 0-22-2-32-5L37 244l15-62a104 104 0 0 1-29-72C23 60 70 20 128 20z"/>
+    <path class="cream" d="M28 159c31-18 67-20 104-7 25 9 45 8 67 0 7-2 16-4 25-5-10 47-50 82-98 82-11 0-22-2-31-5l-58 20 15-62a102 102 0 0 1-24-23z"/>
+    <path class="none" d="M31 127c33-24 72-27 112-5 24 13 45 18 75 11"/>
+    <path class="none" d="M133 151c21-5 38-18 55-28 14-8 31-7 45 2"/>
+    <path class="cream" d="M97 229c28-5 61-18 69-36 9-19-21-29-58-18-27 8-54 22-81 11l10 58 58-20z"/>
+    <path fill="#0a3f2a" d="M86 225c30-10 64-28 64-43 0-10-27-9-61 8-18 9-37 15-58 10l6 44 58-20z" opacity=".2"/>
+    <path class="cream" d="M135 218c-3-29 28-39 54-52-27 22-37 39-54 52z"/>
+    <path fill="#0a3f2a" d="M144 215c-16-18 9-32 46-49-23 20-30 35-46 49z"/>
+    <path class="cream" d="M73 108l36-25 35 25v43H73z"/>
+    <path fill="#0a3f2a" d="M86 145v-29h14v29zm29 0v-24h15v24z"/>
+    <path class="cream" d="M50 72c0-18 11-30 11-30s11 12 11 30v74H50z"/>
+    <circle class="gold" cx="166" cy="71" r="18"/>
+  </g>
+  <text class="text" x="286" y="105" font-size="76">Finca</text>
+  <text class="text" x="286" y="182" font-size="76">Limpia</text>
+  <path class="line" d="M286 205c82-10 180-10 286 0"/>
+  <path class="gold" d="M520 114c19-6 30-18 33-37-18 3-31 14-37 32 9-4 17-6 24-6-7 3-14 7-20 11z"/>
+</svg>
