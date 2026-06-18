@@ -21,13 +21,12 @@ if (menuButton && menu) {
   });
 }
 
-const encodedMessage = encodeURIComponent(BUSINESS_CONFIG.whatsappMessage);
-const whatsappHref = `https://wa.me/${BUSINESS_CONFIG.phoneInternational}?text=${encodedMessage}`;
+const whatsappHref = `https://wa.me/${BUSINESS_CONFIG.phoneInternational}?text=${encodeURIComponent(BUSINESS_CONFIG.whatsappMessage)}`;
 
 document.querySelectorAll('[data-whatsapp-link]').forEach((link) => {
-  link.setAttribute('href', whatsappHref);
-  link.setAttribute('target', '_blank');
-  link.setAttribute('rel', 'noopener');
+  link.href = whatsappHref;
+  link.target = '_blank';
+  link.rel = 'noopener';
 });
 
 document.querySelectorAll('[data-phone-label]').forEach((el) => {
