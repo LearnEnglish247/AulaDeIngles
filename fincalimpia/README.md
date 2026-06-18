@@ -9,9 +9,4 @@ https://englishstudy.club/fincalimpia/
 Configured contact:
 WhatsApp: +34 644 852 762
 
-This version implements the desktop-first layout from the approved mockup:
-- desktop hero in two columns
-- inverted cream/white logo on dark forest green
-- five separate service icon PNGs
-- WhatsApp-only contact
-- no repeated phone/email rows
+This version uses the new circular Finca Limpia logo with the normal house detail, desktop-first layout, separate service icons, and WhatsApp-only contact.
