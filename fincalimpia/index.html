@@ -9,14 +9,14 @@
   <meta property="og:title" content="Finca Limpia">
   <meta property="og:description" content="Corte, desbroce y limpieza de fincas en Nava y alrededores.">
   <meta property="og:type" content="website">
-  <meta property="og:image" content="assets/og-finca-limpia.png">
-  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
-  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+  <meta property="og:image" content="assets/og-finca-limpia-v2.png">
+  <link rel="icon" href="assets/favicon-v2.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon-v2.png">
   <link rel="manifest" href="site.webmanifest">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600;700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="styles-v2.css">
 </head>
 <body>
   <svg class="defs" aria-hidden="true" focusable="false">
@@ -34,8 +34,8 @@
   <header class="site-header" id="inicio">
     <nav class="nav shell" aria-label="Navegación principal">
       <a class="brand" href="#inicio" aria-label="Finca Limpia - Inicio">
-        <img class="brand-logo brand-desktop" src="assets/logo-inverted.png" alt="Finca Limpia" width="182" height="90">
-        <img class="brand-logo brand-mobile" src="assets/logo-mark-inverted.png" alt="Finca Limpia" width="58" height="58">
+        <img class="brand-logo brand-desktop" src="assets/logo-inverted-v2.png" alt="Finca Limpia" width="182" height="80">
+        <img class="brand-logo brand-mobile" src="assets/logo-mark-inverted-v2.png" alt="Finca Limpia" width="58" height="58">
       </a>
 
       <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="menu">Menú</button>
@@ -46,7 +46,9 @@
         <a href="#zona">Zona</a>
         <a href="#precios">Precios</a>
         <a href="#contacto">Contacto</a>
-        <a class="nav-whatsapp" data-whatsapp-link href="#contacto"><svg><use href="#wa"></use></svg><span>WhatsApp</span></a>
+        <a class="nav-whatsapp icon-pill" data-whatsapp-link href="#contacto" aria-label="WhatsApp">
+          <svg><use href="#wa"></use></svg>
+        </a>
       </div>
     </nav>
   </header>
@@ -55,7 +57,7 @@
     <section class="hero dark-section">
       <div class="shell hero-grid">
         <div class="hero-brand" aria-label="Finca Limpia">
-          <img src="assets/logo-inverted.png" alt="Finca Limpia" width="555" height="272">
+          <img src="assets/logo-inverted-v2.png" alt="Finca Limpia" width="555" height="243">
         </div>
 
         <div class="hero-copy">
@@ -63,7 +65,7 @@
           <p class="lead">Ayuda local para mantener jardines, prados y fincas limpias, seguras y en orden. Servicio claro, práctico y sin complicaciones.</p>
 
           <div class="actions">
-            <a class="button button-cream" data-whatsapp-link href="#contacto">Pedir presupuesto por WhatsApp</a>
+            <a class="button button-cream" data-whatsapp-link href="#contacto">Pedir presupuesto</a>
             <a class="button button-outline" href="#servicios">Ver servicios</a>
           </div>
 
@@ -160,20 +162,10 @@
             <svg><use href="#leaf"></use></svg>
           </div>
 
-          <div class="zone-body">
-            <div class="zone-map" aria-hidden="true">
-              <svg viewBox="0 0 200 230">
-                <path d="M97 19c18 6 30 8 40 19 12 14 31 18 29 39-2 14 7 17 6 28-2 19-20 21-25 33-4 9 1 22-9 32-10 10-25 10-35 20-10 9-18 27-33 25-18-2-23-19-37-23-13-4-32-3-40-17-9-14 2-29-5-42-6-11-20-14-22-29-2-15 11-25 16-37 5-12 0-29 11-38 10-10 25-5 37-11 14-7 16-26 31-28 14-2 24 8 36 9Z"/>
-                <path class="pin" d="M94 138s26-25 26-48a26 26 0 1 0-52 0c0 23 26 48 26 48Z"/>
-                <circle class="pin" cx="94" cy="90" r="9"/>
-              </svg>
-            </div>
-
-            <div class="zone-copy">
-              <h3>Servicio en Nava y alrededores.</h3>
-              <p class="places">Nava · Ceceda · Piloña cercana · Bimenes · Siero · Villaviciosa interior</p>
-              <p class="note">Otras zonas cercanas, consultar disponibilidad.</p>
-            </div>
+          <div class="zone-copy">
+            <h3>Servicio en Nava y alrededores.</h3>
+            <p class="places">Nava · Ceceda · Piloña cercana · Bimenes · Siero · Villaviciosa interior</p>
+            <p class="note">Otras zonas cercanas, consultar disponibilidad.</p>
           </div>
         </article>
 
@@ -200,33 +192,12 @@
           <span></span>
         </div>
 
-        <div class="contact-card">
-          <div class="contact-action">
-            <a class="contact-button" data-whatsapp-link href="#contacto"><svg><use href="#wa"></use></svg><span>Enviar por WhatsApp</span></a>
-            <p>Manda unas fotos del jardín o finca e indica la zona aproximada.</p>
-          </div>
-
-          <div class="contact-divider" aria-hidden="true"></div>
-
-          <div class="contact-detail">
-            <svg><use href="#wa"></use></svg>
-            <div>
-              <strong>WhatsApp</strong>
-              <a data-whatsapp-link data-phone-label href="#contacto">+34 644 852 762</a>
-            </div>
-          </div>
-
-          <div class="contact-landscape" aria-hidden="true">
-            <svg viewBox="0 0 340 170">
-              <circle cx="292" cy="34" r="15" fill="#d9a83b"/>
-              <path d="M32 127c32-20 72-28 122-28 58 0 98 7 151 28" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"/>
-              <path d="M58 127V96l27-20 27 20v31" fill="none" stroke="currentColor" stroke-width="3" stroke-linejoin="round"/>
-              <path d="M78 127v-16h15v16" fill="none" stroke="currentColor" stroke-width="3" stroke-linejoin="round"/>
-              <path d="M20 132c13 0 19-7 23-19 4 12 10 19 23 19" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"/>
-              <path d="M149 129c0-18 4-29 15-42 11 13 15 24 15 42" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"/>
-              <path d="M172 127c14-16 25-24 40-31 30-14 54-18 92-18" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"/>
-              <path d="M193 127c15-11 27-18 43-24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"/>
-            </svg>
+        <div class="contact-card simple-contact">
+          <div class="contact-center">
+            <a class="contact-button" data-whatsapp-link href="#contacto" aria-label="WhatsApp">
+              <svg><use href="#wa"></use></svg>
+            </a>
+            <p>Presupuestos y consultas por WhatsApp. Envía unas fotos del jardín o finca e indica la zona aproximada.</p>
           </div>
         </div>
       </div>
@@ -235,13 +206,15 @@
 
   <footer class="site-footer dark-section">
     <div class="shell footer-grid">
-      <img src="assets/logo-inverted.png" alt="Finca Limpia" width="160" height="79">
+      <img src="assets/logo-inverted-v2.png" alt="Finca Limpia" width="160" height="70">
       <p>Corte de césped · Desbroce · Limpieza de fincas<br><span>Nava y alrededores</span></p>
     </div>
   </footer>
 
-  <a class="floating-whatsapp" data-whatsapp-link href="#contacto" aria-label="Enviar mensaje por WhatsApp"><svg><use href="#wa"></use></svg><span>WhatsApp</span></a>
+  <a class="floating-whatsapp icon-pill" data-whatsapp-link href="#contacto" aria-label="WhatsApp">
+    <svg><use href="#wa"></use></svg>
+  </a>
 
-  <script src="script.js"></script>
+  <script src="script-v2.js"></script>
 </body>
 </html>
