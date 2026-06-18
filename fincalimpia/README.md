@@ -6,14 +6,10 @@ Upload the whole `fincalimpia` folder to the root of the `englishstudy.club` hos
 Final URL:
 https://englishstudy.club/fincalimpia/
 
-Included:
-- index.html
-- styles.css
-- script.js
-- assets/
-- manifest/favicon files
-
 Main contact currently configured:
 WhatsApp: +34 644 852 762
 
-This version is the refined visual pass matching the approved dark-forest-green / warm-cream design direction more closely.
+Notes:
+- This version uses the approved provided Finca Limpia logo.
+- The servicios section uses custom illustrated SVG icons inspired by the approved sample layout.
+- Contact is WhatsApp-only to avoid unnecessary repetition.
