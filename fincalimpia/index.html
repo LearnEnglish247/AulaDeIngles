@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Finca Limpia | Corte, desbroce y limpieza de fincas en Nava</title>
   <meta name="description" content="Corte de césped, desbroce, limpieza de fincas y mantenimiento básico de jardines en Nava y alrededores. Pide presupuesto rápido por WhatsApp.">
-  <meta name="theme-color" content="#0a3f2a">
+  <meta name="theme-color" content="#0d3e2d">
   <meta property="og:title" content="Finca Limpia">
   <meta property="og:description" content="Corte, desbroce y limpieza de fincas en Nava y alrededores.">
   <meta property="og:type" content="website">
@@ -13,163 +13,325 @@
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
   <link rel="manifest" href="site.webmanifest">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Cormorant+Garamond:wght@600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+  <svg class="svg-defs" aria-hidden="true" focusable="false">
+    <symbol id="i-mower" viewBox="0 0 64 64">
+      <g fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M14 39h29"/>
+        <path d="M26 39l7-10h12l6 10"/>
+        <path d="M35 29l-4-8h-8"/>
+        <circle cx="22" cy="43" r="5"/>
+        <circle cx="44" cy="43" r="4.5"/>
+        <path d="M18 20l11 9"/>
+      </g>
+    </symbol>
+    <symbol id="i-strim" viewBox="0 0 64 64">
+      <g fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M43 16l7 7"/>
+        <path d="M38 21l5-5 9 9-5 5"/>
+        <path d="M21 40L38 23"/>
+        <path d="M14 47l10-3 3-10"/>
+        <path d="M12 50h18"/>
+        <path d="M18 47l-4-7"/>
+      </g>
+    </symbol>
+    <symbol id="i-finca" viewBox="0 0 64 64">
+      <g fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M8 50h48"/>
+        <path d="M12 50V20"/>
+        <path d="M21 50V26"/>
+        <path d="M30 50V18"/>
+        <path d="M39 50V25"/>
+        <path d="M48 50V21"/>
+        <path d="M8 20h40"/>
+        <path d="M52 45c0-4 2-7 5-9-4 0-7-2-9-5 0 4-1 10 4 14Z"/>
+      </g>
+    </symbol>
+    <symbol id="i-puesta" viewBox="0 0 64 64">
+      <g fill="none" stroke="currentColor" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M8 46c9-7 17-10 24-10 6 0 13 2 24 10"/>
+        <path d="M22 46V30l10-8 10 8v16"/>
+        <path d="M29 46v-8h6v8"/>
+        <path d="M50 21c-5 0-9 4-9 9 0 5 4 9 9 9s9-4 9-9c0-5-4-9-9-9Z"/>
+        <path d="M50 18V14"/>
+        <path d="M50 46v4"/>
+      </g>
+    </symbol>
+    <symbol id="i-calendar" viewBox="0 0 64 64">
+      <g fill="none" stroke="currentColor" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round">
+        <rect x="10" y="14" width="34" height="34" rx="5"/>
+        <path d="M18 10v8M36 10v8M10 24h34"/>
+        <path d="M18 30h5M29 30h5M18 38h5M29 38h5"/>
+        <circle cx="50" cy="42" r="9"/>
+        <path d="M46 42l3 3 5-6"/>
+      </g>
+    </symbol>
+    <symbol id="i-pin" viewBox="0 0 64 64">
+      <g fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M32 54s14-13 14-25a14 14 0 1 0-28 0c0 12 14 25 14 25Z"/>
+        <circle cx="32" cy="29" r="5"/>
+      </g>
+    </symbol>
+    <symbol id="i-chat" viewBox="0 0 64 64">
+      <g fill="none" stroke="currentColor" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M16 15h32c6 0 10 4 10 10v12c0 6-4 10-10 10H31l-11 9v-9h-4c-6 0-10-4-10-10V25c0-6 4-10 10-10Z"/>
+        <path d="M21 29h22M21 37h16"/>
+      </g>
+    </symbol>
+    <symbol id="i-phone" viewBox="0 0 64 64">
+      <g fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M21 12h7l4 10-6 4c2 5 7 10 12 12l4-6 10 4v7c0 3-3 6-6 6C27 49 15 37 15 22c0-3 3-6 6-6Z"/>
+      </g>
+    </symbol>
+    <symbol id="i-leaf" viewBox="0 0 64 64">
+      <path d="M50 14C35 14 21 24 17 38c-2 6-2 10-2 10s4 0 10-2c14-4 24-18 25-32Z" fill="currentColor"/>
+      <path d="M17 48c9-12 18-18 28-23" fill="none" stroke="#0d3e2d" stroke-width="2" stroke-linecap="round"/>
+    </symbol>
+  </svg>
+
   <a class="skip-link" href="#contenido">Saltar al contenido</a>
 
   <header class="site-header" id="inicio">
-    <nav class="nav container" aria-label="Navegación principal">
+    <nav class="nav shell" aria-label="Navegación principal">
       <a class="brand" href="#inicio" aria-label="Finca Limpia - Inicio">
-        <img src="assets/logo-full.svg" alt="Finca Limpia" width="190" height="65">
+        <span class="brand-mark"><img src="assets/mark-inverse.png" alt="" width="64" height="67"></span>
+        <span class="brand-text"><span>Finca</span><span>Limpia</span></span>
       </a>
+
       <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="menu">Menú</button>
+
       <div class="nav-links" id="menu">
         <a href="#servicios">Servicios</a>
         <a href="#zona">Zona</a>
         <a href="#precios">Precios</a>
         <a href="#contacto">Contacto</a>
-        <a class="nav-whatsapp" data-whatsapp-link href="#contacto" aria-label="Contactar por WhatsApp">WhatsApp</a>
+        <a class="nav-whatsapp" data-whatsapp-link href="#contacto">
+          <svg class="mini-icon"><use href="#i-phone"></use></svg>
+          <span>WhatsApp</span>
+        </a>
       </div>
     </nav>
   </header>
 
   <main id="contenido">
     <section class="hero section-dark">
-      <div class="container hero-grid">
-        <div class="hero-logo" aria-hidden="true">
-          <img src="assets/logo-full.svg" alt="" width="560" height="190">
+      <div class="shell hero-grid">
+        <div class="hero-brand">
+          <div class="hero-lockup">
+            <img class="hero-mark" src="assets/mark-inverse.png" alt="Logotipo Finca Limpia" width="370" height="387">
+            <div class="hero-wordmark" aria-hidden="true">
+              <span>Finca</span>
+              <span>Limpia</span>
+              <i></i>
+            </div>
+          </div>
         </div>
+
         <div class="hero-copy">
-          <p class="eyebrow">Nava y alrededores</p>
           <h1>Corte, desbroce y limpieza de fincas en Nava y alrededores.</h1>
-          <p class="lead">Ayuda local para mantener jardines, prados y fincas limpios, seguros y en orden. Servicio claro, práctico y sin complicaciones.</p>
-          <div class="actions">
+          <p class="lead">Ayuda local para mantener jardines, prados y fincas limpias, seguras y en orden. Un servicio claro, práctico y sin complicaciones.</p>
+
+          <div class="hero-actions">
             <a class="button button-cream" data-whatsapp-link href="#contacto">Pedir presupuesto por WhatsApp</a>
             <a class="button button-outline" href="#servicios">Ver servicios</a>
           </div>
-          <p class="micro"><span aria-hidden="true">●</span> Envía unas fotos y recibe una orientación rápida.</p>
+
+          <p class="hero-note"><svg class="note-leaf"><use href="#i-leaf"></use></svg> Envía unas fotos y recibe una orientación rápida.</p>
         </div>
       </div>
     </section>
 
-    <section class="cream-band whatsapp-band" aria-label="Presupuesto por WhatsApp">
-      <div class="container band-inner">
+    <section class="cream-band quote-band" aria-label="Presupuesto por WhatsApp">
+      <div class="shell quote-band-inner">
         <div>
           <h2>¿Quieres saber cuánto puede costar?</h2>
-          <p>Manda fotos o un vídeo del jardín, finca o zona que quieres limpiar. Así se puede valorar el tamaño, el acceso y el estado del terreno.</p>
+          <p>Manda fotos o un vídeo del jardín, finca o zona que quieres limpiar. Así se puede valorar mejor el tamaño, el acceso y el estado del terreno.</p>
         </div>
         <a class="button button-green" data-whatsapp-link href="#contacto">Enviar fotos por WhatsApp</a>
       </div>
     </section>
 
     <section class="section-light" id="servicios">
-      <div class="container">
-        <div class="section-heading">
-          <p class="eyebrow dark">Servicios</p>
-          <h2>Trabajos sencillos para dejar la finca en orden.</h2>
+      <div class="shell">
+        <div class="title-block centered dark">
+          <div class="ornament"><span></span><svg><use href="#i-leaf"></use></svg><span></span></div>
+          <h2>Servicios</h2>
         </div>
-        <div class="cards services-grid">
-          <article class="card">
-            <span class="icon" aria-hidden="true">⌁</span>
+
+        <div class="services-grid">
+          <article class="service-card">
+            <div class="service-icon"><svg><use href="#i-mower"></use></svg></div>
             <h3>Corte de césped</h3>
-            <p>Mantenimiento puntual o regular para jardines, prados pequeños y zonas verdes.</p>
+            <p>Mantenimiento puntual o regular para jardines y zonas verdes.</p>
           </article>
-          <article class="card">
-            <span class="icon" aria-hidden="true">╱</span>
+
+          <article class="service-card">
+            <div class="service-icon"><svg><use href="#i-strim"></use></svg></div>
             <h3>Desbroce</h3>
-            <p>Hierba alta, maleza, bordes, accesos y zonas que se han cerrado con el tiempo.</p>
+            <p>Hierba alta, maleza y zonas descuidadas que necesitan limpieza.</p>
           </article>
-          <article class="card">
-            <span class="icon" aria-hidden="true">⌂</span>
+
+          <article class="service-card">
+            <div class="service-icon"><svg><use href="#i-finca"></use></svg></div>
             <h3>Limpieza de fincas</h3>
-            <p>Puesta a punto de parcelas, exteriores de casas y terrenos con vegetación descuidada.</p>
+            <p>Puesta a punto de parcelas, accesos y exteriores de uso particular.</p>
           </article>
-          <article class="card">
-            <span class="icon" aria-hidden="true">✦</span>
+
+          <article class="service-card">
+            <div class="service-icon"><svg><use href="#i-puesta"></use></svg></div>
             <h3>Puesta a punto</h3>
-            <p>Ideal antes del verano, una visita familiar, una venta, un alquiler o una segunda vivienda.</p>
+            <p>Ideal antes del verano, una visita, un alquiler o una venta.</p>
           </article>
-          <article class="card">
-            <span class="icon" aria-hidden="true">↻</span>
+
+          <article class="service-card">
+            <div class="service-icon"><svg><use href="#i-calendar"></use></svg></div>
             <h3>Mantenimiento periódico</h3>
-            <p>Visitas acordadas para que el terreno no vuelva a cerrarse y sea más fácil de cuidar.</p>
-          </article>
-          <article class="card muted-card">
-            <span class="icon" aria-hidden="true">☘</span>
-            <h3>Restos verdes</h3>
-            <p>La recogida o retirada se valora según volumen, acceso y tipo de trabajo.</p>
+            <p>Visitas acordadas para que el terreno no se vuelva a cerrar.</p>
           </article>
         </div>
       </div>
     </section>
 
-    <section class="section-dark steps" id="como-funciona">
-      <div class="container">
-        <div class="section-heading centered">
-          <p class="eyebrow">Cómo funciona</p>
-          <h2>Rápido, claro y sin vueltas.</h2>
+    <section class="how section-dark">
+      <div class="shell">
+        <div class="title-block centered light">
+          <div class="ornament"><span></span><svg><use href="#i-leaf"></use></svg><span></span></div>
+          <h2>Cómo funciona</h2>
         </div>
-        <div class="steps-grid">
-          <div class="step"><strong>1</strong><h3>Envías fotos</h3><p>Manda por WhatsApp fotos o un vídeo de la zona.</p></div>
-          <div class="step"><strong>2</strong><h3>Recibes valoración</h3><p>Se revisa el tamaño, el acceso y el estado del terreno.</p></div>
-          <div class="step"><strong>3</strong><h3>Se acuerda el trabajo</h3><p>Se confirma día, servicio y precio antes de empezar.</p></div>
-          <div class="step"><strong>4</strong><h3>Se deja limpio</h3><p>Se realiza el trabajo y se deja la zona más clara y manejable.</p></div>
+
+        <div class="steps-line">
+          <div class="step-item">
+            <span class="step-number">1</span>
+            <h3>Envías fotos</h3>
+            <p>Manda fotos o un vídeo de la zona por WhatsApp.</p>
+          </div>
+          <div class="step-arrow">→</div>
+          <div class="step-item">
+            <span class="step-number">2</span>
+            <h3>Recibes una valoración</h3>
+            <p>Te damos una orientación y presupuesto aproximado.</p>
+          </div>
+          <div class="step-arrow">→</div>
+          <div class="step-item">
+            <span class="step-number">3</span>
+            <h3>Se acuerda el trabajo</h3>
+            <p>Fijamos día y detalles del servicio que necesitas.</p>
+          </div>
+          <div class="step-arrow">→</div>
+          <div class="step-item">
+            <span class="step-number">4</span>
+            <h3>Se deja la zona limpia</h3>
+            <p>Realizamos el trabajo y dejamos todo limpio y en orden.</p>
+          </div>
         </div>
       </div>
     </section>
 
-    <section class="section-light split-section" id="zona">
-      <div class="container split-grid">
-        <div class="panel panel-cream">
-          <p class="eyebrow dark">Zona de servicio</p>
-          <h2>Servicio en Nava y alrededores.</h2>
-          <p>Trabajos en Nava y pueblos cercanos. También se pueden valorar desplazamientos a otras zonas según disponibilidad, acceso y tipo de trabajo.</p>
-          <p class="places">Nava · Ceceda · Piloña cercana · Bimenes · Siero · Villaviciosa interior</p>
-          <p class="note">Otras zonas cercanas: consultar disponibilidad.</p>
-        </div>
-        <div class="panel panel-green" id="precios">
-          <p class="eyebrow">Precios</p>
-          <h2>Presupuesto según cada finca.</h2>
-          <p>Cada terreno es distinto. El precio depende del tamaño, la altura de la hierba, el acceso, el estado de la finca y si hay que retirar restos verdes.</p>
-          <ul class="checklist">
-            <li>Presupuesto rápido por WhatsApp</li>
-            <li>Orientación con fotos o vídeo</li>
-            <li>Sin compromiso</li>
-            <li>Mantenimientos periódicos bajo acuerdo</li>
-          </ul>
-        </div>
+    <section class="section-light info-section" id="zona">
+      <div class="shell info-grid">
+        <article class="area-card panel-cream">
+          <div class="title-block left dark compact">
+            <h2>Zona de servicio</h2>
+          </div>
+          <div class="area-inner">
+            <div class="map-panel" aria-hidden="true">
+              <svg class="map-svg" viewBox="0 0 180 210">
+                <path d="M87 18c17 6 29 7 38 18 12 14 30 18 28 38-1 14 7 16 6 27-1 18-19 20-24 31-4 9 1 22-9 32-9 9-24 9-34 18-10 9-18 26-32 24-17-2-22-18-36-22-13-4-31-3-39-16-8-14 1-28-6-41-6-11-19-13-21-28-2-14 10-24 15-36 5-12 0-28 10-37 10-10 25-5 36-11 14-7 16-25 31-27 14-2 23 8 37 10Z"/>
+                <g class="map-pin">
+                  <path d="M90 106s19-18 19-34a19 19 0 1 0-38 0c0 16 19 34 19 34Z"/>
+                  <circle cx="90" cy="72" r="7"/>
+                </g>
+              </svg>
+            </div>
+            <div class="area-copy">
+              <h3>Servicio en Nava y alrededores.</h3>
+              <p class="area-places">Nava · Ceceda · Piloña cercana · Bimenes · Siero · Villaviciosa interior</p>
+              <p class="area-note">Para otras zonas cercanas, se puede consultar disponibilidad según acceso y tipo de trabajo.</p>
+            </div>
+          </div>
+        </article>
+
+        <article class="price-card panel-green" id="precios">
+          <div class="title-block left light compact">
+            <h2>Precios</h2>
+          </div>
+          <p class="price-intro">Cada finca es distinta. El precio depende del tamaño, el estado del terreno, el acceso y el tipo de trabajo.</p>
+          <div class="price-box">
+            <ul>
+              <li>Presupuesto rápido por WhatsApp</li>
+              <li>Orientación con fotos o vídeo</li>
+              <li>Sin compromiso</li>
+            </ul>
+          </div>
+          <p class="price-note"><svg class="note-leaf"><use href="#i-leaf"></use></svg> También se pueden valorar mantenimientos periódicos.</p>
+        </article>
       </div>
     </section>
 
-    <section class="cream-band contact-band" id="contacto">
-      <div class="container contact-grid">
-        <div>
-          <p class="eyebrow dark">Contacto</p>
-          <h2>Pide presupuesto enviando unas fotos.</h2>
-          <p>Manda unas fotos del jardín o finca, indica la zona aproximada y qué necesitas: cortar, desbrozar, limpiar o mantener de forma periódica.</p>
-          <a class="button button-green big-whatsapp" data-whatsapp-link href="#contacto">Enviar por WhatsApp</a>
+    <section class="contact section-cream" id="contacto">
+      <div class="shell">
+        <div class="title-block centered dark compact">
+          <h2>Contacto</h2>
         </div>
-        <div class="contact-card">
-          <dl>
-            <div><dt>WhatsApp</dt><dd><a data-whatsapp-link href="#contacto" data-phone-label>+34 644 852 762</a></dd></div>
-            <div><dt>Teléfono</dt><dd><a href="tel:+34644852762" data-phone-label>+34 644 852 762</a></dd></div>
-          </dl>
-          <p class="small">Atención por WhatsApp para presupuestos y consultas.</p>
+
+        <div class="contact-panel">
+          <div class="contact-cta">
+            <a class="contact-button" data-whatsapp-link href="#contacto">
+              <svg class="contact-button-icon"><use href="#i-chat"></use></svg>
+              <span>Enviar por WhatsApp</span>
+            </a>
+            <p>Manda unas fotos del jardín o finca e indica la zona aproximada.</p>
+          </div>
+
+          <div class="contact-divider" aria-hidden="true"></div>
+
+          <div class="contact-details">
+            <div class="detail-row">
+              <svg class="detail-icon"><use href="#i-phone"></use></svg>
+              <div>
+                <strong>WhatsApp</strong>
+                <a data-whatsapp-link href="#contacto" data-phone-label>+34 644 852 762</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="contact-illustration" aria-hidden="true">
+            <svg viewBox="0 0 320 170">
+              <circle cx="271" cy="34" r="14" fill="#d7a63b"></circle>
+              <path d="M28 120c32-20 72-28 122-28 58 0 98 7 142 28" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"></path>
+              <path d="M56 122v-32l24-18 24 18v32" fill="none" stroke="currentColor" stroke-width="3" stroke-linejoin="round"></path>
+              <path d="M73 122v-16h14v16" fill="none" stroke="currentColor" stroke-width="3" stroke-linejoin="round"></path>
+              <path d="M150 122c20-21 40-31 58-40 29-14 52-17 83-18" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"></path>
+              <path d="M170 122c14-14 23-21 37-28" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"></path>
+              <path d="M16 128c13 0 19-7 23-19 4 12 10 19 23 19" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"></path>
+              <path d="M127 126c0-16 4-26 14-38 10 12 14 22 14 38" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"></path>
+            </svg>
+          </div>
         </div>
       </div>
     </section>
   </main>
 
   <footer class="site-footer section-dark">
-    <div class="container footer-grid">
-      <img src="assets/logo-full.svg" alt="Finca Limpia" width="180" height="62">
+    <div class="shell footer-grid">
+      <a class="footer-brand" href="#inicio" aria-label="Volver arriba">
+        <span class="brand-mark small"><img src="assets/mark-inverse.png" alt="" width="44" height="46"></span>
+        <span class="brand-text"><span>Finca</span><span>Limpia</span></span>
+      </a>
       <p>Corte de césped · Desbroce · Limpieza de fincas<br><span>Nava y alrededores</span></p>
-      <a class="footer-link" href="../">Volver a English Study Club</a>
     </div>
   </footer>
 
-  <a class="floating-whatsapp" data-whatsapp-link href="#contacto" aria-label="Enviar WhatsApp">WhatsApp</a>
+  <a class="mobile-whatsapp" data-whatsapp-link href="#contacto" aria-label="Enviar mensaje por WhatsApp">
+    <svg><use href="#i-chat"></use></svg>
+    <span>WhatsApp</span>
+  </a>
+
   <script src="script.js"></script>
 </body>
 </html>

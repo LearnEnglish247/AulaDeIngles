@@ -1,8 +1,7 @@
-// Edit these values before publishing.
 const BUSINESS_CONFIG = {
   phoneDisplay: '+34 644 852 762',
   phoneInternational: '34644852762',
-  whatsappMessage: 'Hola, me gustaría pedir presupuesto para cortar/desbrozar/limpiar una finca o jardín. Puedo enviar fotos.'
+  whatsappMessage: 'Hola, me gustaría pedir presupuesto para cortar, desbrozar o limpiar una finca o jardín. Puedo enviar fotos.'
 };
 
 const menuButton = document.querySelector('.menu-toggle');
@@ -33,8 +32,4 @@ document.querySelectorAll('[data-whatsapp-link]').forEach((link) => {
 
 document.querySelectorAll('[data-phone-label]').forEach((el) => {
   el.textContent = BUSINESS_CONFIG.phoneDisplay;
-  if (el.tagName.toLowerCase() === 'a' && !el.hasAttribute('data-whatsapp-link')) {
-    el.setAttribute('href', `tel:+${BUSINESS_CONFIG.phoneInternational}`);
-  }
 });
-
