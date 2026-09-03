@@ -1,6 +1,8 @@
 # Contact form Worker
 
-Accepts `POST /api/contact` JSON from the native form on `/contacto/` and emails **info@englishstudy.club**.
+Optional Worker. Live site intake is **Google Forms** on `/contacto/` and `/prueba-de-nivel/` (see `ops/EMAIL-ROUTING.md`). This Worker is unused unless `/api/contact` is deployed later.
+
+Accepts `POST /api/contact` JSON from a native `#contact-form` and emails **info@englishstudy.club**.
 
 ## Deploy
 
