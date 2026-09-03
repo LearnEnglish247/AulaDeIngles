@@ -1,0 +1,11 @@
+name = "aula-contact-form"
+main = "src/index.js"
+compatibility_date = "2026-03-01"
+
+# When Cloudflare proxies englishstudy.club in front of GitHub Pages:
+# routes = [{ pattern = "englishstudy.club/api/contact*", zone_name = "englishstudy.club" }]
+
+[vars]
+TO_EMAIL = "info@englishstudy.club"
+FROM_EMAIL = "noreply@englishstudy.club"
+ALLOW_ORIGIN = "https://englishstudy.club"

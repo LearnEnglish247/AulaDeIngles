@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 720" role="img" aria-labelledby="hillsTitle hillsDesc">
+  <title id="hillsTitle">Colinas de Asturias cerca de casa</title>
+  <desc id="hillsDesc">Ilustracion de colinas locales, sol y un camino hacia un aula en Nava</desc>
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#eef4fb"/>
+      <stop offset="55%" stop-color="#f7f4ef"/>
+      <stop offset="100%" stop-color="#ebe4d8"/>
+    </linearGradient>
+    <linearGradient id="hillFar" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#c5d4e8"/>
+      <stop offset="100%" stop-color="#9eb4d0"/>
+    </linearGradient>
+    <linearGradient id="hillMid" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#1d4675"/>
+      <stop offset="100%" stop-color="#102849"/>
+    </linearGradient>
+  </defs>
+  <rect width="1000" height="720" fill="url(#sky)"/>
+  <circle cx="760" cy="150" r="54" fill="#d4a63a"/>
+  <circle cx="760" cy="150" r="78" fill="#d4a63a" opacity=".18"/>
+  <path d="M0 430 C140 360 260 390 380 420 C520 460 640 350 780 390 C880 420 940 400 1000 370 V720 H0 Z" fill="url(#hillFar)" opacity=".85"/>
+  <path d="M0 500 C180 440 300 470 450 520 C610 575 720 470 860 510 C930 535 970 520 1000 500 V720 H0 Z" fill="#8f1731" opacity=".12"/>
+  <path d="M0 560 C160 500 280 520 420 570 C580 630 700 540 850 580 C930 605 970 595 1000 580 V720 H0 Z" fill="url(#hillMid)"/>
+  <path d="M120 720 C220 560 310 500 420 490 C510 482 560 540 620 600 C690 680 760 700 860 720 Z" fill="#f7f4ef" opacity=".92"/>
+  <path d="M390 505 h36 v28 h-36 z" fill="#f7f4ef"/>
+  <path d="M386 505 l22 -18 22 18 z" fill="#f7f4ef"/>
+  <rect x="402" y="514" width="10" height="14" fill="#102849"/>
+  <path d="M448 528 C448 508 458 495 468 495 C478 495 484 510 484 528" fill="none" stroke="#f7f4ef" stroke-width="7" stroke-linecap="round"/>
+  <circle cx="468" cy="488" r="5" fill="#f7f4ef"/>
+  <g opacity=".35" fill="#102849">
+    <circle cx="180" cy="180" r="3"/>
+    <circle cx="220" cy="150" r="2.5"/>
+    <circle cx="260" cy="190" r="2"/>
+  </g>
+  <text x="48" y="88" font-family="Inter, system-ui, sans-serif" font-size="22" font-weight="800" fill="#8f1731" letter-spacing="3">NAVA - ASTURIAS</text>
+</svg>
