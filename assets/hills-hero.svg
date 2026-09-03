@@ -1,6 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 720" role="img" aria-labelledby="hillsTitle hillsDesc">
   <title id="hillsTitle">Colinas de Asturias cerca de casa</title>
-  <desc id="hillsDesc">Ilustración de colinas locales, sol y un camino hacia un aula en Nava</desc>
+  <desc id="hillsDesc">Ilustracion de colinas locales, sol y un camino hacia un aula en Nava</desc>
   <defs>
     <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
       <stop offset="0%" stop-color="#eef4fb"/>
@@ -33,5 +34,5 @@
     <circle cx="220" cy="150" r="2.5"/>
     <circle cx="260" cy="190" r="2"/>
   </g>
-  <text x="48" y="88" font-family="Inter, system-ui, sans-serif" font-size="22" font-weight="800" fill="#8f1731" letter-spacing="3">NAVA · ASTURIAS</text>
+  <text x="48" y="88" font-family="Inter, system-ui, sans-serif" font-size="22" font-weight="800" fill="#8f1731" letter-spacing="3">NAVA - ASTURIAS</text>
 </svg>
