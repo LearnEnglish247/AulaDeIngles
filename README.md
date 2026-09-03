@@ -1,15 +1,16 @@
 # Aula de Inglés Nava — englishstudy.club
 
-GitHub Pages site for **Aula de Inglés Nava** (Plaza centro - Nava).
+Public site for **Aula de Inglés Nava** (Plaza centro - Nava).
 
-## Variant C (current draft)
+## Live site
 
-- Homepage hero: licensed classroom photo (`assets/hero-classroom-640/1000.webp`) / “cerca de casa” / age strip / sticky mobile CTA / merch-ready.
-- Logos locked to `assets/logo-sidebar.png` and `assets/logo-mobile-banner.png`.
+- Homepage hero: licensed classroom photo (`assets/hero-classroom-640/1000.webp`), “cerca de casa”, age strip, sticky mobile CTA.
+- Logos: `assets/logo-sidebar.png` and `assets/logo-mobile-banner.png`.
+- Fonts: Libre Baskerville + Inter.
 - Public email: `info@englishstudy.club` (see `ops/EMAIL-ROUTING.md`).
 - Public address: **Plaza centro - Nava**.
-- Live intake: Google Forms on `/contacto/` and `/prueba-de-nivel/` (see `ops/EMAIL-ROUTING.md`). Email Routing is still needed for `mailto:info@englishstudy.club`.
-- Merch print SVGs in `merch/shopify-print/`.
+- Intake: Google Forms on `/contacto/` and `/prueba-de-nivel/` (responses go to the operator Google Sheets). Email Routing is still needed for `mailto:info@englishstudy.club`.
+- There is no shop, products page, or merch storefront.
 
 ## Local preview
 
@@ -21,5 +22,4 @@ python3 -m http.server 8080
 ## Ops
 
 - Email routing checklist: `ops/EMAIL-ROUTING.md`
-- Brief: `BRIEF-VARIANT-C.md`
 - Performance note: `proyecto-valnalon-29julio.html` (~9MB) is **not** linked from site navigation.

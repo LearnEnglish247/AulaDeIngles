@@ -22,27 +22,24 @@ Docs: [Route emails](https://developers.cloudflare.com/email-service/get-started
 
 ## 2) Live intake: Google Forms
 
-Public intake on the site is **Google Forms** (not the native `/api/contact` Worker).
+Public intake on the site is **Google Forms** (not a bot and not the unused `/api/contact` Worker).
 
 - **Contacto** (`/contacto/`): embed + open-in-new-tab fallback.
 - **Prueba de nivel** (`/prueba-de-nivel/`): embed + open-in-new-tab fallback (long form; iframe ≥ 1600px).
 
-Responses are delivered to the operator Gmail that owns the forms. Do **not** publish that Gmail on the site.
+Responses are delivered to the operator Gmail / Google Sheets that own the forms. Do **not** publish that Gmail on the site.
 
 `mailto:info@englishstudy.club` remains on Contacto (and elsewhere) as an extra path. **Email Routing (step 1) is still required** so those messages reach Gmail.
 
 Privacy policy linked from the Contacto form: `https://englishstudy.club/privacy.html`.
 
-The Cloudflare Worker in `workers/contact-form/` is unused on the live site. Native-form JS in `script.js` is inert unless `#contact-form` is present. Do not rely on `/api/contact` unless that Worker is deployed later.
+The Cloudflare Worker in `workers/contact-form/` is unused on the live site.
 
-## 3) DNS / Shopify checklist (Mark)
+## 3) Checklist (Mark)
 
 - [ ] Email Routing onboarded; MX records healthy
 - [ ] `info@` → Gmail verified (needed for mailto extras)
 - [ ] Google Forms receiving Contacto and Prueba de nivel responses
 - [ ] Test form submission end-to-end (embed + fallback link)
-- [ ] Shopify store created; products use files in `merch/shopify-print/`
-- [ ] `shop.englishstudy.club` CNAME → Shopify (when ready)
-- [ ] Replace placeholder shop link on `/tienda/`
 - [ ] Confirm site never shows `coppercloud47@gmail.com`
 - [ ] Confirm public address shows **Plaza centro - Nava**
