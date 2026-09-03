@@ -8,7 +8,7 @@ GitHub Pages site for **Aula de Inglés Nava** (Plaza centro - Nava).
 - Logos locked to `assets/logo-sidebar.png` and `assets/logo-mobile-banner.png`.
 - Public email: `info@englishstudy.club` (see `ops/EMAIL-ROUTING.md`).
 - Public address: **Plaza centro - Nava**.
-- Native contact form on `/contacto/` (+ Worker in `workers/contact-form/`).
+- Live intake: Google Forms on `/contacto/` and `/prueba-de-nivel/` (see `ops/EMAIL-ROUTING.md`). Email Routing is still needed for `mailto:info@englishstudy.club`.
 - Merch print SVGs in `merch/shopify-print/`.
 
 ## Local preview

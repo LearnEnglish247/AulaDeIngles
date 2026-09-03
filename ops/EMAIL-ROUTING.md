@@ -20,43 +20,27 @@ Requires the domain `englishstudy.club` on Cloudflare DNS.
 
 Docs: [Route emails](https://developers.cloudflare.com/email-service/get-started/route-emails/)
 
-## 2) Contact form delivery
+## 2) Live intake: Google Forms
 
-The native form on `/contacto/` posts JSON to `/api/contact` (Cloudflare Worker in `workers/contact-form/`).
+Public intake on the site is **Google Forms** (not the native `/api/contact` Worker).
 
-Until the Worker is deployed:
+- **Contacto** (`/contacto/`): embed + open-in-new-tab fallback.
+- **Prueba de nivel** (`/prueba-de-nivel/`): embed + open-in-new-tab fallback (long form; iframe ≥ 1600px).
 
-- The form falls back to a `mailto:info@englishstudy.club` draft with the same fields.
-- That still lands in Gmail once Email Routing (step 1) is live.
+Responses are delivered to the operator Gmail that owns the forms. Do **not** publish that Gmail on the site.
 
-### Deploy the Worker
+`mailto:info@englishstudy.club` remains on Contacto (and elsewhere) as an extra path. **Email Routing (step 1) is still required** so those messages reach Gmail.
 
-```bash
-cd workers/contact-form
-npx wrangler login
-npx wrangler secret put RESEND_API_KEY   # or leave unset to use Email Routing + Resend later
-npx wrangler deploy
-```
+Privacy policy linked from the Contacto form: `https://englishstudy.club/privacy.html`.
 
-Recommended route (Cloudflare in front of GitHub Pages):
-
-- Worker route: `englishstudy.club/api/contact*`
-- Or dedicated host: `contact-api.englishstudy.club`
-
-Set public endpoint override if needed (before `script.js`):
-
-```html
-<script>window.CONTACT_FORM_ENDPOINT='https://contact-api.englishstudy.club';</script>
-```
-
-The Worker sends mail **to** `info@englishstudy.club` (public identity). Routing then forwards privately to Gmail.
+The Cloudflare Worker in `workers/contact-form/` is unused on the live site. Native-form JS in `script.js` is inert unless `#contact-form` is present. Do not rely on `/api/contact` unless that Worker is deployed later.
 
 ## 3) DNS / Shopify checklist (Mark)
 
 - [ ] Email Routing onboarded; MX records healthy
-- [ ] `info@` → Gmail verified
-- [ ] Worker deployed for `/api/contact` (or endpoint override set)
-- [ ] Test form submission end-to-end
+- [ ] `info@` → Gmail verified (needed for mailto extras)
+- [ ] Google Forms receiving Contacto and Prueba de nivel responses
+- [ ] Test form submission end-to-end (embed + fallback link)
 - [ ] Shopify store created; products use files in `merch/shopify-print/`
 - [ ] `shop.englishstudy.club` CNAME → Shopify (when ready)
 - [ ] Replace placeholder shop link on `/tienda/`
