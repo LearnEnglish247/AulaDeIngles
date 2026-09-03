@@ -4,7 +4,7 @@ GitHub Pages site for **Aula de Inglés Nava** (Plaza centro - Nava).
 
 ## Variant C (current draft)
 
-- Homepage mood: local Asturias hills / “cerca de casa” / age strip / sticky mobile CTA / merch-ready.
+- Homepage hero: licensed classroom photo (`assets/hero-classroom-640/1000.webp`) / “cerca de casa” / age strip / sticky mobile CTA / merch-ready.
 - Logos locked to `assets/logo-sidebar.png` and `assets/logo-mobile-banner.png`.
 - Public email: `info@englishstudy.club` (see `ops/EMAIL-ROUTING.md`).
 - Public address: **Plaza centro - Nava**.
