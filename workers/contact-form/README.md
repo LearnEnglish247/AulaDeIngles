@@ -1,10 +1,12 @@
 # Contact form Worker
 
-Optional Worker. Live site intake is **Google Forms** on `/contacto/` and `/prueba-de-nivel/` (see `ops/EMAIL-ROUTING.md`). This Worker is unused unless `/api/contact` is deployed later.
+Unused. Live site intake is **Google Forms** on `/contacto/` and `/prueba-de-nivel/` (see `ops/EMAIL-ROUTING.md`).
 
-Accepts `POST /api/contact` JSON from a native `#contact-form` and emails **info@englishstudy.club**.
+This Worker is kept in the repo only as optional infrastructure. It is not wired into the public pages.
 
-## Deploy
+Accepts `POST /api/contact` JSON and emails **info@englishstudy.club**.
+
+## Deploy (optional)
 
 ```bash
 cd workers/contact-form
