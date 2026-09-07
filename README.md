@@ -1,3 +1,5 @@
+> **Status (2026-09-07):** Public site is a **coming-soon** page (apertura verano 2027). Full site snapshot: branch `site-full-ready-2027`. See `SITE-ARCHIVE.md`.
+
 # Aula de Inglés Nava — englishstudy.club
 
 Public site for **Aula de Inglés Nava** (Plaza centro - Nava).
