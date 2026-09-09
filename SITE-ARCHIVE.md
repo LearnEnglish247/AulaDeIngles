@@ -8,4 +8,5 @@ Branch **`site-full-ready-2027`** is the snapshot of the academy pages from the 
 
 ## Do not
 - `/fincalimpia/` has been removed from this repo and must not return on this domain. Do not publish `/tienda/` or `/merch/` in the sitemap or navigation.
-- Do not re-embed Google Forms or load Google Fonts from `fonts.googleapis.com` / `fonts.gstatic.com`.
+- Do not load Google Fonts from `fonts.googleapis.com` / `fonts.gstatic.com`.
+- The level-test Google Form is embedded on `/prueba-de-nivel/`. Do not publish spreadsheet edit URLs or the operator Gmail on the public pages.

@@ -1,6 +1,6 @@
 # Contact form Worker
 
-Unused. Live site intake is **Google Forms** on `/contacto/` and `/prueba-de-nivel/` (see `ops/EMAIL-ROUTING.md`).
+Unused. Live `/prueba-de-nivel/` uses a Google Form embed. `/contacto/` uses email and WhatsApp (see `ops/EMAIL-ROUTING.md`).
 
 This Worker is kept in the repo only as optional infrastructure. It is not wired into the public pages.
 

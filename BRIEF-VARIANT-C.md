@@ -20,7 +20,7 @@ Local “cerca de casa” academy: licensed classroom hero, age strip, sticky mo
 ## Function (current)
 
 1. Licensed classroom photo homepage with consistent chrome.
-2. Google Forms on `/contacto/` and `/prueba-de-nivel/`. Email Routing still needed for `mailto:info@`.
+2. Google Form on `/prueba-de-nivel/`. Contacto is email and WhatsApp. Email Routing still needed for `mailto:info@`.
 3. Privacy page uses school name + Plaza centro - Nava + `info@` only (no invented NIF or legal identity).
 4. Merch print SVGs may exist unlinked in `merch/shopify-print/`. They are not a live store.
 5. `proyecto-valnalon-29julio.html` is not in navigation.

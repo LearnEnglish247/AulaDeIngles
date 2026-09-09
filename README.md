@@ -11,7 +11,7 @@ Public site for **Aula de Inglés Nava** (Plaza centro - Nava).
 - Fonts: Libre Baskerville + Inter, self-hosted under `assets/fonts/` (no Google Fonts).
 - Public email: `info@englishstudy.club` (see `ops/EMAIL-ROUTING.md`).
 - Public address: **Plaza centro - Nava** (no house or street number).
-- Contact and prueba de nivel: email and WhatsApp only. WhatsApp is for parents, tutors, or adults.
+- Contact: email and WhatsApp (parents, tutors, or adults). Prueba de nivel: embedded Google Form, with open-in-new-tab, email, and WhatsApp as fallback.
 - Legal pages: `/aviso-legal.html`, `/privacidad.html`, `/cookies.html`. `/privacy.html` redirects to privacidad. Footer is legal links only.
 - There is no shop, products page, or merch storefront.
 
