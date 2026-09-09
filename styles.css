@@ -79,19 +79,18 @@ body.has-sticky-cta{padding-bottom:0}@media(max-width:980px){.age-strip{grid-tem
   .site-footer .footer-legal{width:calc(100% - 24px)}
 }
 
-/* Legal pages: compact, discreet LSSI/privacy body */
+/* Legal pages: bare LSSI/privacy/cookies — small, no marketing titles */
+.section-legal{padding:36px 0 56px}
 .legal-compact{
-  font-size:.82rem;
-  line-height:1.45;
+  font-size:.68rem;
+  line-height:1.4;
   color:var(--muted);
-  background:rgba(255,255,255,.55);
-  border:1px solid var(--line);
-  border-radius:18px;
-  padding:18px 20px;
+  background:rgba(255,255,255,.4);
+  border:1px solid rgba(16,40,73,.08);
+  border-radius:12px;
+  padding:14px 16px;
 }
-.legal-compact p{margin:0 0 .85em}
+.legal-compact p{margin:0 0 .7em}
 .legal-compact p:last-child{margin-bottom:0}
-.legal-compact strong{color:var(--navy);font-weight:700}
-.legal-compact a{color:var(--navy);font-weight:700;text-decoration:underline}
-.page-title.section-small{padding-bottom:28px}
-.section-small + .section-small{padding-top:0}
+.legal-compact strong{color:var(--ink);font-weight:600}
+.legal-compact a{color:var(--navy);font-weight:600;text-decoration:underline;font-size:inherit}
