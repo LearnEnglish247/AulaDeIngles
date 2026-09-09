@@ -1,7 +1,7 @@
 # Site notes
 
 ## Live (GitHub Pages → `main`)
-Public site is the full academy site. The homepage is the real academy first screen, with the line **Abrimos en verano de 2027** in the centre of that viewport. It is a message on the homepage, not a coming-soon landing that replaces the site.
+Public site is the full academy site. The homepage is the real academy first screen, with the line **Apertura 2027** in the centre of that viewport. It is a message on the homepage, not a coming-soon landing that replaces the site.
 
 ## Snapshot branch
 Branch **`site-full-ready-2027`** is the snapshot of the academy pages from the coming-soon period. Legal pages, self-hosted fonts, and contact-without-Google-Forms live on `main`.
