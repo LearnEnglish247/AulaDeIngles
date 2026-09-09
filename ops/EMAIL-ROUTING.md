@@ -38,4 +38,4 @@ The Cloudflare Worker in `workers/contact-form/` is unused on the live site. Do 
 - [ ] Google Form on `/prueba-de-nivel/` receiving responses
 - [ ] Google Form on `/contacto/` receiving responses
 - [ ] Confirm site never shows `coppercloud47@gmail.com`
-- [ ] Confirm public address shows **Plaza centro - Nava** (no house number)
+- [ ] Confirm public address shows **Nava** (no house number)
