@@ -94,3 +94,14 @@ body.has-sticky-cta{padding-bottom:0}@media(max-width:980px){.age-strip{grid-tem
 .legal-compact p:last-child{margin-bottom:0}
 .legal-compact strong{font-weight:inherit;color:inherit}
 .legal-compact a{color:inherit;font-weight:inherit;text-decoration:underline;font-size:inherit}
+
+.legal-compact .legal-label{
+  display:inline;
+  font-size:.68rem;
+  letter-spacing:.04em;
+  text-transform:uppercase;
+  color:var(--muted);
+  font-weight:inherit;
+}
+.legal-compact .legal-section-start{margin-top:1.1em}
+.legal-compact .legal-section-start:first-child{margin-top:0}
