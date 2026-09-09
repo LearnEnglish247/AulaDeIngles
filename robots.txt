@@ -2,5 +2,4 @@ User-agent: *
 Allow: /
 Disallow: /tienda/
 Disallow: /merch/
-Disallow: /fincalimpia/
 Sitemap: https://englishstudy.club/sitemap.xml
