@@ -1,18 +1,11 @@
-# Site archive / coming-soon mode (2026-09-07)
+# Site notes
 
 ## Live (GitHub Pages → `main`)
-Public site is the **coming-soon** homepage (apertura verano 2027).
-Deep Aula marketing URLs redirect to `/`.
+Public site is the full academy site. The homepage is the real academy first screen, with the line **Abrimos en verano de 2027** in the centre of that viewport. It is a message on the homepage, not a coming-soon landing that replaces the site.
 
-## Full site (ready to restore)
-Branch: **`site-full-ready-2027`**
-
-That branch is a snapshot of the full academy site at the moment coming-soon went live.
-It is **not** the GitHub Pages source. Restore when the business opens by merging/cherry-picking from that branch back to `main` (or switching Pages temporarily for preview).
-
-## Assets
-Logos, favicons, and brand files remain on `main` under `assets/` so the landing page matches the brand.
+## Snapshot branch
+Branch **`site-full-ready-2027`** is the snapshot of the academy pages from the coming-soon period. Legal pages, self-hosted fonts, and contact-without-Google-Forms live on `main`.
 
 ## Do not
-- Do not publish `site-full-ready-2027` as the Pages source until opening day.
-- Do not put the full site under a public `/archive/` folder on `main` (it would be crawlable).
+- Do not publish `/fincalimpia/`, `/tienda/`, or `/merch/` in the sitemap or navigation.
+- Do not re-embed Google Forms or load Google Fonts from `fonts.googleapis.com` / `fonts.gstatic.com`.

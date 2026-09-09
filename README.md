@@ -1,4 +1,4 @@
-> **Status (2026-09-07):** Public site is a **coming-soon** page (apertura verano 2027). Full site snapshot: branch `site-full-ready-2027`. See `SITE-ARCHIVE.md`.
+> **Status (2026-09-09):** Public site is the full academy site. Homepage first screen includes the line **Abrimos en verano de 2027**. Snapshot of the older full-site drop: branch `site-full-ready-2027`. See `SITE-ARCHIVE.md`.
 
 # Aula de Inglés Nava — englishstudy.club
 
@@ -6,12 +6,13 @@ Public site for **Aula de Inglés Nava** (Plaza centro - Nava).
 
 ## Live site
 
-- Homepage hero: licensed classroom photo (`assets/hero-classroom-640/1000.webp`), “cerca de casa”, age strip, sticky mobile CTA.
+- Homepage: academy hero (licensed classroom photo), age strip, sticky mobile CTA, with “Abrimos en verano de 2027” centred on the first screen.
 - Logos: `assets/logo-sidebar.png` and `assets/logo-mobile-banner.png`.
-- Fonts: Libre Baskerville + Inter.
+- Fonts: Libre Baskerville + Inter, self-hosted under `assets/fonts/` (no Google Fonts).
 - Public email: `info@englishstudy.club` (see `ops/EMAIL-ROUTING.md`).
-- Public address: **Plaza centro - Nava**.
-- Intake: Google Forms on `/contacto/` and `/prueba-de-nivel/` (responses go to the operator Google Sheets). Email Routing is still needed for `mailto:info@englishstudy.club`.
+- Public address: **Plaza centro - Nava** (no house or street number).
+- Contact and prueba de nivel: email and WhatsApp only. WhatsApp is for parents, tutors, or adults.
+- Legal pages: `/aviso-legal.html`, `/privacidad.html`, `/cookies.html`. `/privacy.html` redirects to privacidad. Footer is legal links only.
 - There is no shop, products page, or merch storefront.
 
 ## Local preview

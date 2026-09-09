@@ -20,26 +20,22 @@ Requires the domain `englishstudy.club` on Cloudflare DNS.
 
 Docs: [Route emails](https://developers.cloudflare.com/email-service/get-started/route-emails/)
 
-## 2) Live intake: Google Forms
+## 2) Live intake: email and WhatsApp
 
-Public intake on the site is **Google Forms** (not a bot and not the unused `/api/contact` Worker).
+There is **no Google Form** on the public site. Contacto and prueba de nivel use:
 
-- **Contacto** (`/contacto/`): embed + open-in-new-tab fallback.
-- **Prueba de nivel** (`/prueba-de-nivel/`): embed + open-in-new-tab fallback (long form; iframe ≥ 1600px).
+- Email: `mailto:info@englishstudy.club`
+- WhatsApp for mothers, fathers, tutors, or adults (existing `wa.me` link)
 
-Responses are delivered to the operator Gmail / Google Sheets that own the forms. Do **not** publish that Gmail on the site.
+**Email Routing (step 1) is required** so those messages reach Gmail.
 
-`mailto:info@englishstudy.club` remains on Contacto (and elsewhere) as an extra path. **Email Routing (step 1) is still required** so those messages reach Gmail.
+Privacy: `https://englishstudy.club/privacidad.html` (`/privacy.html` redirects there).
 
-Privacy policy linked from the Contacto form: `https://englishstudy.club/privacy.html`.
-
-The Cloudflare Worker in `workers/contact-form/` is unused on the live site.
+The Cloudflare Worker in `workers/contact-form/` is unused on the live site. Do not deploy it for this change.
 
 ## 3) Checklist (Mark)
 
 - [ ] Email Routing onboarded; MX records healthy
-- [ ] `info@` → Gmail verified (needed for mailto extras)
-- [ ] Google Forms receiving Contacto and Prueba de nivel responses
-- [ ] Test form submission end-to-end (embed + fallback link)
+- [ ] `info@` → Gmail verified
 - [ ] Confirm site never shows `coppercloud47@gmail.com`
-- [ ] Confirm public address shows **Plaza centro - Nava**
+- [ ] Confirm public address shows **Plaza centro - Nava** (no house number)
