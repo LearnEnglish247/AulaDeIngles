@@ -20,14 +20,12 @@ Requires the domain `englishstudy.club` on Cloudflare DNS.
 
 Docs: [Route emails](https://developers.cloudflare.com/email-service/get-started/route-emails/)
 
-## 2) Live intake: email and WhatsApp
+## 2) Live intake
 
-There is **no Google Form** on the public site. Contacto and prueba de nivel use:
+- **Prueba de nivel** (`/prueba-de-nivel/`): Google Form embed, open-in-new-tab fallback, plus email and WhatsApp as secondary options. Responses go to the operator Google account that owns the form. Do **not** publish that Gmail or the linked spreadsheet edit URL on the public site.
+- **Contacto** (`/contacto/`): email and WhatsApp only (no second Google Form on this page).
 
-- Email: `mailto:info@englishstudy.club`
-- WhatsApp for mothers, fathers, tutors, or adults (existing `wa.me` link)
-
-**Email Routing (step 1) is required** so those messages reach Gmail.
+`mailto:info@englishstudy.club` remains. **Email Routing (step 1) is still required** so those messages reach Gmail.
 
 Privacy: `https://englishstudy.club/privacidad.html` (`/privacy.html` redirects there).
 
@@ -37,5 +35,6 @@ The Cloudflare Worker in `workers/contact-form/` is unused on the live site. Do 
 
 - [ ] Email Routing onboarded; MX records healthy
 - [ ] `info@` → Gmail verified
+- [ ] Google Form on `/prueba-de-nivel/` receiving responses
 - [ ] Confirm site never shows `coppercloud47@gmail.com`
 - [ ] Confirm public address shows **Plaza centro - Nava** (no house number)
