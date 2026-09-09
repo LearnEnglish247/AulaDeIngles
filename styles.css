@@ -92,5 +92,5 @@ body.has-sticky-cta{padding-bottom:0}@media(max-width:980px){.age-strip{grid-tem
 }
 .legal-compact p{margin:0 0 .7em}
 .legal-compact p:last-child{margin-bottom:0}
-.legal-compact strong{color:var(--ink);font-weight:600}
-.legal-compact a{color:var(--navy);font-weight:600;text-decoration:underline;font-size:inherit}
+.legal-compact strong{font-weight:inherit;color:inherit}
+.legal-compact a{color:inherit;font-weight:inherit;text-decoration:underline;font-size:inherit}
