@@ -95,3 +95,18 @@ body.has-sticky-cta{padding-bottom:0}@media(max-width:980px){.age-strip{grid-tem
 .legal-compact a{color:inherit;font-weight:inherit;text-decoration:none;font-size:inherit}
 .legal-compact .legal-label{display:inline;font-size:inherit;letter-spacing:0;text-transform:none;color:inherit;font-weight:inherit}
 .legal-compact .legal-section-start{margin-top:0}
+
+/* Cómo empezar list on blue band: white body text */
+.band-blue .cerca-card,
+.band-blue .cerca-card h3,
+.band-blue .cerca-card p,
+.band-blue .cerca-card .list,
+.band-blue .cerca-card .list li,
+.band-blue .numbered-list,
+.band-blue .numbered-list li{
+  color:#fff;
+}
+.band-blue .cerca-card .list li,
+.band-blue .numbered-list li{
+  color:rgba(255,255,255,.92);
+}
