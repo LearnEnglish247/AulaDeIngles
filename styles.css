@@ -79,29 +79,19 @@ body.has-sticky-cta{padding-bottom:0}@media(max-width:980px){.age-strip{grid-tem
   .site-footer .footer-legal{width:calc(100% - 24px)}
 }
 
-/* Legal pages: bare LSSI/privacy/cookies — small, no marketing titles */
-.section-legal{padding:36px 0 56px}
+/* Legal pages: dense plain block */
+.section-legal{padding:28px 0 48px}
 .legal-compact{
-  font-size:.68rem;
-  line-height:1.4;
+  font-size:.65rem;
+  line-height:1.35;
   color:var(--muted);
-  background:rgba(255,255,255,.4);
-  border:1px solid rgba(16,40,73,.08);
-  border-radius:12px;
-  padding:14px 16px;
+  background:transparent;
+  border:0;
+  border-radius:0;
+  padding:0;
 }
-.legal-compact p{margin:0 0 .7em}
+.legal-compact p{margin:0 0 .55em}
 .legal-compact p:last-child{margin-bottom:0}
-.legal-compact strong{font-weight:inherit;color:inherit}
-.legal-compact a{color:inherit;font-weight:inherit;text-decoration:underline;font-size:inherit}
-
-.legal-compact .legal-label{
-  display:inline;
-  font-size:.68rem;
-  letter-spacing:.04em;
-  text-transform:uppercase;
-  color:var(--muted);
-  font-weight:inherit;
-}
-.legal-compact .legal-section-start{margin-top:1.1em}
-.legal-compact .legal-section-start:first-child{margin-top:0}
+.legal-compact a{color:inherit;font-weight:inherit;text-decoration:none;font-size:inherit}
+.legal-compact .legal-label{display:inline;font-size:inherit;letter-spacing:0;text-transform:none;color:inherit;font-weight:inherit}
+.legal-compact .legal-section-start{margin-top:0}
