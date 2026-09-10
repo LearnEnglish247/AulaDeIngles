@@ -161,15 +161,14 @@ h3{font-size:1.25rem;margin:0 0 8px}
 .sticky-mobile-cta{display:none}
 
 /* Legal */
-.section-legal{padding:28px 0 48px}
-.legal-compact{font-size:.72rem;line-height:1.45;color:var(--muted)}
-.legal-compact h2{
-  font-family:Inter,system-ui,sans-serif;font-size:.85rem;font-weight:800;
-  letter-spacing:0;text-transform:none;color:var(--navy);margin:1.4rem 0 .55rem;scroll-margin-top:24px
-}
-.legal-compact h2:first-child{margin-top:0}
-.legal-compact p{margin:0 0 .7em}
+.section-legal{padding:12px 0 32px}
+.legal-compact{font-size:.72rem;line-height:1.4;color:var(--muted);font-weight:400}
+.legal-compact .legal-block{margin:0 0 .55rem;scroll-margin-top:16px}
+.legal-compact .legal-block:last-child{margin-bottom:0}
+.legal-compact p{margin:0 0 .28em;font-weight:400;color:var(--muted)}
+.legal-compact p:last-child{margin-bottom:0}
 .legal-compact a{color:inherit;text-decoration:none;font-weight:inherit}
+.legal-compact strong,.legal-compact b{font-weight:400}
 
 body.legal-page .sidebar .side-cta{display:none}
 body.legal-page .site-footer{display:none}
