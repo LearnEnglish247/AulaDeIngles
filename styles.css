@@ -16,18 +16,24 @@ button{font:inherit}
 
 /* Compact sticky left nav */
 .sidebar{
-  position:sticky;top:0;align-self:flex-start;height:100vh;
+  position:fixed;inset:0 auto 0 0;height:100vh;
   width:var(--sidebar);flex:0 0 var(--sidebar);
   background:rgba(247,244,239,.98);backdrop-filter:blur(10px);
   border-right:1px solid var(--line);
   display:flex;flex-direction:column;gap:8px;
   padding:18px 14px 16px;overflow:auto;z-index:40
 }
-body.spa{display:flex;flex-wrap:wrap;min-height:100vh}
-body.spa .mobile-topbar,body.spa .mobile-panel{width:100%}
-body.spa .sidebar{position:fixed;inset:0 auto 0 0}
-body.spa .main{margin-left:var(--sidebar);flex:1;min-width:0;width:calc(100% - var(--sidebar))}
-body.spa .site-footer{margin-left:var(--sidebar);width:calc(100% - var(--sidebar))}
+/* Pages with the left nav: keep main beside the fixed sidebar (never below it). */
+body.spa,body.legal-page,body.has-sidebar{
+  display:flex;flex-wrap:wrap;min-height:100vh;align-items:flex-start
+}
+body.spa .mobile-topbar,body.spa .mobile-panel,
+body.legal-page .mobile-topbar,body.legal-page .mobile-panel,
+body.has-sidebar .mobile-topbar,body.has-sidebar .mobile-panel{width:100%}
+.main{margin-left:var(--sidebar);flex:1;min-width:0;width:calc(100% - var(--sidebar))}
+.site-footer{margin-left:var(--sidebar);width:calc(100% - var(--sidebar))}
+body.spa .main,body.legal-page .main,body.has-sidebar .main{margin-left:var(--sidebar);flex:1;min-width:0;width:calc(100% - var(--sidebar))}
+body.spa .site-footer,body.legal-page .site-footer,body.has-sidebar .site-footer{margin-left:var(--sidebar);width:calc(100% - var(--sidebar))}
 
 .brand{display:flex;justify-content:center;align-items:center;padding-bottom:8px}
 .brand-logo{width:168px;height:auto}
@@ -130,7 +136,8 @@ h3{font-size:1.25rem;margin:0 0 8px}
 .list{display:grid;gap:8px;margin:14px 0 0;color:var(--muted);padding:0;list-style:none}
 .list li{position:relative;padding-left:1.05rem}
 .list li:before{content:'•';position:absolute;left:0;color:var(--gold);font-weight:900}
-.form-frame{width:100%;min-height:880px;border:0;background:#fff;border-radius:20px}
+.form-frame{width:100%;min-height:720px;border:0;background:#fff;border-radius:20px}
+.form-shell.level-shell .form-frame{min-height:900px;height:900px}
 .form-note{font-size:.95rem;color:var(--muted)}
 .page-title{background:linear-gradient(135deg,rgba(16,40,73,.04),#fff,rgba(157,31,50,.04))}
 .small{font-size:.95rem;color:var(--muted)}
@@ -160,8 +167,9 @@ h3{font-size:1.25rem;margin:0 0 8px}
 .floating-whatsapp svg{width:20px;height:20px;fill:currentColor}
 .sticky-mobile-cta{display:none}
 
-/* Legal */
-.section-legal{padding:12px 0 32px}
+/* Legal + satellite pages */
+.section-legal{padding:20px 0 40px}
+.section.page-title{padding:28px 0 12px}
 .legal-compact{font-size:.72rem;line-height:1.4;color:var(--muted);font-weight:400}
 .legal-compact .legal-block{margin:0 0 .55rem;scroll-margin-top:16px}
 .legal-compact .legal-block:last-child{margin-bottom:0}
@@ -179,10 +187,10 @@ body.legal-page .site-footer{display:none}
   .grid-4{grid-template-columns:repeat(2,1fr)}
 }
 @media(max-width:980px){
-  body.spa{display:block}
-  body.spa .sidebar,.sidebar{display:none}
-  body.spa .main,.main{margin-left:0;width:100%}
-  body.spa .site-footer,.site-footer{margin-left:0;width:100%}
+  body.spa,body.legal-page,body.has-sidebar{display:block}
+  body.spa .sidebar,body.legal-page .sidebar,body.has-sidebar .sidebar,.sidebar{display:none}
+  body.spa .main,body.legal-page .main,body.has-sidebar .main,.main{margin-left:0;width:100%}
+  body.spa .site-footer,body.legal-page .site-footer,body.has-sidebar .site-footer,.site-footer{margin-left:0;width:100%}
   .mobile-topbar{display:block}
   .hero-grid,.grid-2,.grid-3,.grid-4{grid-template-columns:1fr}
   .container,.narrow,.site-footer .footer-legal{width:min(100% - 32px,980px)}
