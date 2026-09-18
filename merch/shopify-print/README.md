@@ -14,5 +14,5 @@ Vector layouts that embed the **real** site logo (`assets/logo-sidebar.png`). Th
 ## Brand locks
 
 - Logo source of truth: existing PNG logos only.
-- Colors: cream `#f7f4ef`, navy `#102849`, burgundy `#8f1731`, gold `#d4a63a`.
+- Colors: cream `#f7f4ef`, navy `#023C78`, burgundy `#8f1731`, gold `#d4a63a`.
 - Do not invent new wordmarks or heraldic crests.
