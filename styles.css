@@ -62,7 +62,7 @@ body.spa .site-footer,body.legal-page .site-footer,body.has-sidebar .site-footer
 .mobile-topbar{display:none;position:sticky;top:0;z-index:130;background:rgba(247,244,239,.98);backdrop-filter:blur(8px);border-bottom:1px solid var(--line);padding:10px 14px}
 .mobile-topbar-inner{display:flex;justify-content:space-between;align-items:center;gap:12px}
 .mobile-brand{display:flex;align-items:center;gap:11px;min-width:0;flex:1}
-.mobile-brand img{width:280px;max-width:calc(100vw - 150px);height:auto;max-height:70px;object-fit:contain}
+.mobile-brand img{width:280px;max-width:calc(100vw - 150px);height:auto;max-height:70px;object-fit:contain;display:block;image-rendering:auto;-webkit-backface-visibility:hidden;backface-visibility:hidden}
 .menu-toggle{border:1px solid var(--line);background:#fff;border-radius:16px;padding:12px 16px;font-weight:800;color:var(--navy)}
 .menu-toggle:focus-visible{outline:2px solid var(--gold);outline-offset:2px}
 .mobile-panel{display:none;position:fixed;top:101px;left:0;right:0;bottom:auto;z-index:125;background:var(--cream);border-bottom:1px solid var(--line);padding:12px 16px 16px;max-height:calc(100vh - 101px);overflow-y:auto;box-shadow:0 16px 32px rgba(2,60,120,.1)}
