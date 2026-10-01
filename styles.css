@@ -231,3 +231,26 @@ body.legal-page .site-footer{display:none}
   .mobile-brand img{width:min(190px, calc(100vw - 140px));max-width:calc(100vw - 140px);height:auto;max-height:70px}
   .mobile-panel{top:93px;max-height:calc(100vh - 93px)}
 }
+
+/* Ship 2026-10-01: hero secondary link, FAQ, Cal embed, form strip */
+.hero-secondary-link{margin:4px 0 0;font-weight:700}
+.hero-secondary-link a{color:var(--navy);text-decoration:underline;text-decoration-color:var(--gold);text-underline-offset:4px;font-size:.98rem}
+.hero-secondary-link a:hover{color:var(--navy2)}
+.faq-list{display:grid;gap:12px}
+.faq-item{background:#fff;border:1px solid var(--line);border-radius:18px;padding:0;box-shadow:var(--shadow)}
+.faq-item summary{cursor:pointer;list-style:none;padding:18px 20px;font-weight:800;color:var(--navy);font-size:1.02rem}
+.faq-item summary::-webkit-details-marker{display:none}
+.faq-item summary:after{content:'+';float:right;color:var(--gold);font-weight:900}
+.faq-item[open] summary:after{content:'–'}
+.faq-item summary:focus-visible{outline:2px solid var(--gold);outline-offset:2px;border-radius:18px}
+.faq-item p{margin:0;padding:0 20px 18px;color:var(--muted)}
+.cal-shell .cal-inline{width:100%;min-height:580px;height:580px;overflow:auto;margin-top:16px;border-radius:16px;border:1px solid var(--line);background:#fff}
+.cal-fallback{margin-top:12px}
+.next-steps{margin:12px 0;padding-left:1.2rem;color:var(--muted);display:grid;gap:6px}
+.privacy-first-layer{margin-top:16px;font-size:.88rem;color:var(--muted);line-height:1.5}
+.privacy-first-layer a{font-weight:700;color:var(--navy);text-decoration:underline}
+.mini-cta-secondary{font-weight:700}
+@media(max-width:640px){
+  .cal-shell .cal-inline{min-height:520px;height:520px}
+  .sticky-mobile-cta .btn{font-size:.82rem;padding:12px 8px}
+}
