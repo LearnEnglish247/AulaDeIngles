@@ -1,0 +1,22 @@
+{
+  // englishstudy.club: static site served by Cloudflare Workers static assets.
+  // Deploy from the repo root with `npx wrangler deploy` (see README).
+  "name": "englishstudy-club",
+  "main": "cloudflare/worker.js",
+  "compatibility_date": "2026-10-01",
+  "workers_dev": true,
+  "preview_urls": false,
+  "observability": { "enabled": true },
+  // Worker Custom Domains: Cloudflare owns the DNS records and the TLS certificate.
+  "routes": [
+    { "pattern": "englishstudy.club", "custom_domain": true },
+    { "pattern": "www.englishstudy.club", "custom_domain": true }
+  ],
+  "assets": {
+    "directory": ".",
+    "binding": "ASSETS",
+    "run_worker_first": true,
+    "html_handling": "auto-trailing-slash",
+    "not_found_handling": "404-page"
+  }
+}

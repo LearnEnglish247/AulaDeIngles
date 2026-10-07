@@ -26,3 +26,22 @@ python3 -m http.server 8080
 
 - Email routing checklist: `ops/EMAIL-ROUTING.md`
 - Performance note: `proyecto-valnalon-29julio.html` (~9MB) is **not** linked from site navigation.
+
+## Hosting and deploy (Cloudflare Workers)
+
+The site is served by the Cloudflare Worker `englishstudy-club` using Workers static assets, so Cloudflare issues and renews the TLS certificate. GitHub Pages on `main` is kept only as a fallback.
+
+- Config: `wrangler.jsonc` (assets are the repo root; `.assetsignore` keeps docs, `workers/`, `ops/`, `merch/`, `CNAME` and the config itself off the public site).
+- `cloudflare/worker.js` only keeps the old GitHub Pages URL behaviour: http and www redirect (301) to `https://englishstudy.club`, `/page.html` and `/dir/index.html` return 200, `/dir` redirects (301) to `/dir/`, and HSTS is sent.
+- Custom domains `englishstudy.club` and `www.englishstudy.club` are Worker Custom Domains (`routes` in `wrangler.jsonc`).
+- Preview URL: https://englishstudy-club.coppercloud47.workers.dev
+
+Deploy by hand after merging to `main` (there is no CI deploy):
+
+```bash
+git checkout main && git pull
+npx wrangler deploy        # needs Node 22+ and `wrangler login`
+# On a machine with older Node: bun "$(npm root -g)/wrangler/bin/wrangler.js" deploy
+```
+
+Then check `https://englishstudy.club/`, `/aviso-legal.html`, `/prueba-de-nivel/`, `/robots.txt` and `/sitemap.xml` return 200.
