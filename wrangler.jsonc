@@ -7,10 +7,11 @@
   "workers_dev": true,
   "preview_urls": false,
   "observability": { "enabled": true },
-  // Worker Custom Domains: Cloudflare owns the DNS records and the TLS certificate.
+  // Zone routes: the DNS records stay Proxied (orange) with the GitHub Pages IPs
+  // as placeholder origins; these routes make the Worker answer every request.
   "routes": [
-    { "pattern": "englishstudy.club", "custom_domain": true },
-    { "pattern": "www.englishstudy.club", "custom_domain": true }
+    { "pattern": "englishstudy.club/*", "zone_name": "englishstudy.club" },
+    { "pattern": "www.englishstudy.club/*", "zone_name": "englishstudy.club" }
   ],
   "assets": {
     "directory": ".",
