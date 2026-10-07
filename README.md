@@ -33,7 +33,7 @@ The site is served by the Cloudflare Worker `englishstudy-club` using Workers st
 
 - Config: `wrangler.jsonc` (assets are the repo root; `.assetsignore` keeps docs, `workers/`, `ops/`, `merch/`, `CNAME` and the config itself off the public site).
 - `cloudflare/worker.js` only keeps the old GitHub Pages URL behaviour: http and www redirect (301) to `https://englishstudy.club`, `/page.html` and `/dir/index.html` return 200, `/dir` redirects (301) to `/dir/`, and HSTS is sent.
-- Custom domains `englishstudy.club` and `www.englishstudy.club` are Worker Custom Domains (`routes` in `wrangler.jsonc`).
+- DNS for `englishstudy.club` (3 A records to `185.199.*`) and `www` (CNAME to `learnenglish247.github.io`) stays **Proxied** (orange cloud). The GitHub IPs are only placeholder origins: the Worker routes `englishstudy.club/*` and `www.englishstudy.club/*` (`routes` in `wrangler.jsonc`) answer every request, so traffic never reaches GitHub Pages. Do not switch these records back to DNS only, or the site goes back to GitHub Pages and its certificate.
 - Preview URL: https://englishstudy-club.coppercloud47.workers.dev
 
 Deploy by hand after merging to `main` (there is no CI deploy):
