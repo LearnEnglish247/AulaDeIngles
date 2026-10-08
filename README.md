@@ -25,7 +25,6 @@ python3 -m http.server 8080
 ## Ops
 
 - Email routing checklist: `ops/EMAIL-ROUTING.md`
-- Performance note: `proyecto-valnalon-29julio.html` (~9MB) is **not** linked from site navigation.
 
 ## Hosting and deploy (Cloudflare Workers)
 
