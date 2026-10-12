@@ -1,6 +1,7 @@
 /* Noche de Ajedrez — Aula palette with black in place of navy */
 :root{--cream:#f7f4ef;--mist:#f0ebe3;--ink:#111;--black:#111;--black2:#2a2a2a;--red:#8f1731;--red2:#a31e38;--gold:#d4a63a;--line:#ddd6cb;--muted:#4a4a4a;--light-sq:#f3e6c4;--dark-sq:#b8893a;--radius:20px}
 *{box-sizing:border-box}
+[hidden]{display:none!important}
 html{scroll-behavior:smooth}
 body{margin:0;font-family:Inter,system-ui,sans-serif;background:var(--cream);color:var(--ink);line-height:1.6}
 img{max-width:100%;height:auto;display:block}
