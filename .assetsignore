@@ -12,3 +12,7 @@ ops
 merch
 CNAME
 *.md
+
+package.json
+bun.lock
+package-lock.json
