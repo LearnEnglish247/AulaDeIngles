@@ -1,0 +1,62 @@
+/* Noche de Ajedrez — Aula palette with black in place of navy */
+:root{--cream:#f7f4ef;--mist:#f0ebe3;--ink:#111;--black:#111;--black2:#2a2a2a;--red:#8f1731;--red2:#a31e38;--gold:#d4a63a;--line:#ddd6cb;--muted:#4a4a4a;--light-sq:#f3e6c4;--dark-sq:#b8893a;--radius:20px}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:Inter,system-ui,sans-serif;background:var(--cream);color:var(--ink);line-height:1.6}
+img{max-width:100%;height:auto;display:block}
+a{color:var(--red)}
+.skip-link{position:absolute;left:-999px}
+.skip-link:focus{left:12px;top:12px;background:#fff;padding:8px 12px;border-radius:10px;z-index:9;outline:2px solid var(--gold)}
+:focus-visible{outline:3px solid var(--gold);outline-offset:2px}
+.nda-top{padding:12px 16px;border-bottom:1px solid var(--line);background:var(--cream)}
+.nda-brand img{width:150px}
+main{max-width:1100px;margin:0 auto;padding:0 16px}
+h1,h2{color:var(--black);line-height:1.1}
+h2{font-family:'Libre Baskerville',Georgia,serif;font-size:clamp(1.4rem,4vw,2rem);margin:0 0 .6em}
+.nda-title{font-family:'Bree Serif','Libre Baskerville',Georgia,serif;font-weight:400;font-size:clamp(2.6rem,11vw,4.8rem);margin:.1em 0 .25em;letter-spacing:-.01em;display:inline-block;background:var(--black);color:#fff;padding:.08em .35em .14em;transform:rotate(-2deg);border-radius:6px;box-shadow:6px 6px 0 var(--gold)}
+.nda-eyebrow{display:flex;align-items:center;gap:10px;font-size:.78rem;letter-spacing:.14em;font-weight:800;text-transform:uppercase;color:var(--red);margin:0 0 10px}
+.nda-eyebrow:before{content:'';width:32px;height:3px;background:var(--gold);border-radius:9px}
+.nda-hero{display:grid;gap:24px;padding:28px 0 36px}
+.nda-lead{font-size:1.12rem;max-width:36em;margin:.6em 0}
+.nda-en{color:var(--muted);font-style:italic;margin:0 0 18px}
+.nda-actions,.nda-quiz-actions{display:flex;flex-wrap:wrap;gap:10px}
+.nda-btn{display:inline-flex;align-items:center;justify-content:center;min-height:48px;padding:12px 20px;border-radius:14px;font:inherit;font-weight:800;text-decoration:none;cursor:pointer;border:2px solid var(--black)}
+.nda-btn-primary{background:var(--black);color:#fff;box-shadow:0 0 0 2px var(--gold) inset}
+.nda-btn-primary:hover{background:var(--black2)}
+.nda-btn-ghost{background:#fff;color:var(--black)}
+.nda-btn-ghost:hover{background:var(--mist)}
+.nda-media{margin:0;position:relative;border-radius:var(--radius);overflow:hidden;background:repeating-conic-gradient(var(--mist) 0 25%,#fff 0 50%) 0 0/48px 48px;border:1px solid var(--line)}
+.nda-media-wide{aspect-ratio:16/9}
+.nda-media-square{aspect-ratio:1/1;max-width:420px}
+.nda-media img{width:100%;height:100%;object-fit:cover}
+.nda-media.is-missing img{display:none}
+.nda-media.is-missing:after{content:attr(data-label);position:absolute;inset:auto 12px 12px auto;background:var(--black);color:#fff;font-size:.8rem;padding:4px 10px;border-radius:8px}
+.nda-section{padding:32px 0;border-top:1px solid var(--line)}
+.nda-steps{padding-left:1.2em;max-width:40em}
+.nda-steps li{margin:.5em 0}
+.nda-steps li::marker{color:var(--red);font-weight:800}
+.nda-quiz{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:16px;max-width:520px}
+.nda-progress{margin:0;font-size:.85rem;font-weight:800;color:var(--red);text-transform:uppercase;letter-spacing:.08em}
+.nda-task{margin:.2em 0 12px;font-weight:700;font-size:1.05rem}
+.nda-board{display:grid;grid-template-columns:repeat(8,1fr);width:100%;aspect-ratio:1/1;border:4px solid var(--black);border-radius:6px;overflow:hidden;user-select:none}
+.nda-sq{all:unset;box-sizing:border-box;display:flex;align-items:center;justify-content:center;aspect-ratio:1/1;font-size:clamp(1.6rem,8.5vw,2.6rem);line-height:1;cursor:pointer;position:relative;font-family:'Segoe UI Symbol','Noto Sans Symbols 2','DejaVu Sans',sans-serif}
+.nda-sq.l{background:var(--light-sq)}.nda-sq.d{background:var(--dark-sq)}
+.nda-sq .w{color:#fff;-webkit-text-stroke:1.2px #111;text-shadow:0 1px 0 #111}
+.nda-sq .b{color:#111}
+.nda-sq:focus-visible{outline:3px solid var(--red);outline-offset:-3px}
+.nda-sq.sel{box-shadow:inset 0 0 0 4px var(--red)}
+.nda-sq.tgt:after{content:'';width:26%;height:26%;border-radius:50%;background:rgba(17,17,17,.35);position:absolute}
+.nda-sq.last{box-shadow:inset 0 0 0 4px var(--gold)}
+.nda-sq .coord{position:absolute;font:700 .55rem Inter,sans-serif;left:3px;bottom:2px;color:rgba(17,17,17,.6)}
+.nda-feedback{min-height:1.6em;font-weight:700;margin:12px 0}
+.nda-feedback.ok{color:#1d5e2b}.nda-feedback.bad{color:var(--red)}
+.nda-result{margin-top:20px;background:var(--black);color:#fff;border-radius:var(--radius);padding:20px;max-width:520px}
+.nda-result .nda-eyebrow{color:var(--gold)}
+.nda-level{font-family:'Bree Serif',Georgia,serif;font-size:2.4rem;margin:0;color:var(--gold)}
+.nda-result .nda-btn-ghost{margin-top:8px}
+.nda-soon{display:inline-block;background:var(--gold);color:var(--black);font-weight:800;padding:6px 14px;border-radius:999px}
+.nda-footer{border-top:1px solid var(--line);padding:24px 16px;text-align:center;font-size:.9rem}
+.nda-footer a{color:var(--black)}
+@media(min-width:860px){.nda-hero{grid-template-columns:1fr 1.1fr;align-items:center;padding:56px 0}
+ #como-h+.nda-steps{float:left;width:55%}.nda-media-square{margin-left:auto}.nda-section:after{content:'';display:block;clear:both}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
